@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import helloworldImage from './helloworld.png';
+import helloworldInsetImage from './helloworld-small.svg';
+
 export default [
     {
         name: (
@@ -317,5 +320,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    }
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="hello world"
+                description="Name for the 'hello world' extension"
+                id="gui.extension.helloworld.name"
+            />
+        ),
+        extensionId: 'helloWorld',
+        iconURL: helloworldImage,
+        insetIconURL: helloworldInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="hello world."
+                description="Description for the 'hello world' extension"
+                id="gui.extension.helloworld.description"
+            />
+        ),
+        featured: true
+    },
 ];
