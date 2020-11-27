@@ -341,4 +341,29 @@ export default [
         ),
         featured: true
     },
+
+
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="hf weather"
+                description="Name for the 'hf weather' extension"
+                id="gui.extension.hfweather.name"
+            />
+        ),
+        extensionId: 'hfweather',
+        iconURL: helloworldImage,
+        insetIconURL: helloworldInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="hf weather."
+                description="Description for the 'hf weather' extension"
+                id="gui.extension.hfweather.description"
+            />
+        ),
+        featured: true
+    }
+
+
+
 ];
