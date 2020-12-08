@@ -3,11 +3,14 @@
         "@babel/plugin-syntax-dynamic-import",
         "@babel/plugin-transform-async-to-generator",
         "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-runtime",
         ["react-intl", {
             "messagesDir": "./translations/messages/"
-        }]],
+        }]
+
+    ],
     "presets": [
-        ["@babel/preset-env", {"targets": {"browsers": ["last 3 versions", "Safari >= 8", "iOS >= 8"]}}],
-        "@babel/preset-react"
+         ["@babel/preset-env",  {"targets": {"browsers": ["last 2 Chrome versions"]}}],
+         "@babel/preset-react"
     ]
 }

@@ -49,6 +49,13 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 import helloworldImage from './helloworld.png';
 import helloworldInsetImage from './helloworld-small.svg';
 
+import dobotImage from './dobot.png';
+import dobotInsetImage from './dobot.svg';
+
+import eimImage from './eim.png';
+import eimInsetImage from './eim.svg';
+
+
 export default [
     {
         name: (
@@ -341,6 +348,49 @@ export default [
         ),
         featured: true
     },
+
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="dobot"
+                description="Name for the 'dobot' extension"
+                id="gui.extension.dobot.name"
+            />
+        ),
+        extensionId: 'dobot',
+        iconURL: dobotImage,
+        insetIconURL: dobotInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="dobot."
+                description="Description for the 'dobot' extension"
+                id="gui.extension.dobot.description"
+            />
+        ),
+        featured: true
+    },
+
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="eim"
+                description="Name for the 'eim' extension"
+                id="gui.extension.eim.name"
+            />
+        ),
+        extensionId: 'eim',
+        iconURL: eimImage,
+        insetIconURL: eimInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="eim."
+                description="Description for the 'eim' extension"
+                id="gui.extension.eim.description"
+            />
+        ),
+        featured: true
+    },
+
 
 
     {
