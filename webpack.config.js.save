@@ -8,7 +8,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 var CompressionWebpackPlugin = require('compression-webpack-plugin')
 const productionGzipExtensions = ['js', 'css']
-const fs = require('fs');
+
 // PostCss
 var autoprefixer = require('autoprefixer');
 var postcssVars = require('postcss-simple-vars');
@@ -21,9 +21,10 @@ const base = {
     devtool: 'cheap-module-source-map',
     devServer: {
 	https: {
-        	key: fs.readFileSync('./ssl/private.pem'),
-        	cert: fs.readFileSync('./ssl/certificate.pem'),
-        	ca: fs.readFileSync('./ssl/ca_bundle.pem')
+        	key: fs.readFileSync(‘./ssl/private.pem’,
+),
+        	cert: fs.readFileSync(‘./ssl/certificate.pem’),
+        	ca: fs.readFileSync(‘./ssl/ca_bundle.pem’)
     	},
         contentBase: path.resolve(__dirname, 'build'),
         host: '0.0.0.0',
