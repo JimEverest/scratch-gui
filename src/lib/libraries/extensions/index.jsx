@@ -56,6 +56,7 @@ import eimImage from './eim.png';
 import eimInsetImage from './eim.svg';
 
 
+
 export default [
     {
         name: (
@@ -391,7 +392,26 @@ export default [
         featured: true
     },
 
-
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="baidu"
+                description="Name for the 'baidu' extension"
+                id="gui.extension.baidu.name"
+            />
+        ),
+        extensionId: 'baidu',
+        iconURL: eimImage,
+        insetIconURL: eimInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="baidu."
+                description="Description for the 'baidu' extension"
+                id="gui.extension.baidu.description"
+            />
+        ),
+        featured: true
+    },
 
     {
         name: (
