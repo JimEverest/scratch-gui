@@ -6,6 +6,8 @@ var webpack = require('webpack');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+var CompressionWebpackPlugin = require('compression-webpack-plugin')
+const productionGzipExtensions = ['js', 'css']
 
 // PostCss
 var autoprefixer = require('autoprefixer');
@@ -20,7 +22,8 @@ const base = {
     devServer: {
         contentBase: path.resolve(__dirname, 'build'),
         host: '0.0.0.0',
-        port: process.env.PORT || 8601
+        port: process.env.PORT || 8601,
+        compress: true
     },
     output: {
         library: 'GUI',
@@ -92,7 +95,14 @@ const base = {
             })
         ]
     },
-    plugins: []
+    plugins: [
+        new CompressionWebpackPlugin({
+            algorithm: 'gzip',
+            test: new RegExp('\\.(' + productionGzipExtensions.join('|') + ')$'),
+            threshold: 10240,
+            minRatio: 0.8
+        })
+    ]
 };
 
 if (!process.env.CI) {
