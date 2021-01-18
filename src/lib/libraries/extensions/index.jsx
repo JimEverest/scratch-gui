@@ -393,6 +393,36 @@ export default [
 
 
 
+
+
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="micro"
+                description="Name for the 'micro' extension"
+                id="gui.extension.micro.name"
+            />
+        ),
+        extensionId: 'micro',
+        iconURL: eimImage,
+        insetIconURL: eimInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="micro."
+                description="Description for the 'micro' extension"
+                id="gui.extension.micro.description"
+            />
+        ),
+        featured: true
+    },
+
+
+
+
+
+
+
+
     {
         name: (
             <FormattedMessage
