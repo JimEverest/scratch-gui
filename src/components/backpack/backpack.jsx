@@ -62,22 +62,25 @@ const Backpack = ({
             onClick={onToggle}
         >
             {onToggle ? (
-                <FormattedMessage
-                    defaultMessage="Backpack"
-                    description="Button to open the backpack"
-                    id="gui.backpack.header"
-                />
+                <span>xxxxx </span>
+                // <FormattedMessage
+                //     defaultMessage="Backpack"
+                //     description="Button to open the backpack"
+                //     id="gui.backpack.header"
+                // />
             ) : (
-                <ComingSoonTooltip
-                    place="top"
-                    tooltipId="backpack-tooltip"
-                >
-                    <FormattedMessage
-                        defaultMessage="Backpack"
-                        description="Button to open the backpack"
-                        id="gui.backpack.header"
-                    />
-                </ComingSoonTooltip>
+                <a href="https://beian.miit.gov.cn/" target="_blank">津ICP备2021000378号-1</a>
+                // <ComingSoonTooltip
+                //     place="top"
+                //     tooltipId="backpack-tooltip"
+                // >
+                //     <span>津ICP备2021000378号 </span>
+                //     <FormattedMessage
+                //         defaultMessage="Backpack"
+                //         description="Button to open the backpack"
+                //         id="gui.backpack.header"
+                //     /> 
+                // </ComingSoonTooltip>
             )}
         </div>
         {expanded ? (
