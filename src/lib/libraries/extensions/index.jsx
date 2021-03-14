@@ -55,7 +55,8 @@ import dobotInsetImage from './dobot.svg';
 import eimImage from './eim.png';
 import eimInsetImage from './eim.svg';
 
-
+import aimImage from './Auto Nerf.png';
+import aimInsetImage from './Auto Nerf.svg';
 
 export default [
     {
@@ -413,6 +414,26 @@ export default [
         featured: true
     },
 
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="aim"
+                description="Name for the 'aim' extension"
+                id="gui.extension.aim.name"
+            />
+        ),
+        extensionId: 'aim',
+        iconURL: eimImage,
+        insetIconURL: eimInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="aim."
+                description="Description for the 'aim' extension"
+                id="gui.extension.aim.description"
+            />
+        ),
+        featured: true
+    },
 
 
     {
@@ -437,7 +458,26 @@ export default [
     },
 
 
-
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="otto"
+                description="Name for the 'otto' extension"
+                id="gui.extension.otto.name"
+            />
+        ),
+        extensionId: 'otto',
+        iconURL: eimImage,
+        insetIconURL: eimInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="otto."
+                description="Description for the 'otto' extension"
+                id="gui.extension.otto.description"
+            />
+        ),
+        featured: true
+    },
 
 
 
